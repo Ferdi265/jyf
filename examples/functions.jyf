@@ -1,0 +1,17 @@
+dec('a 5)
+
+dec('inc_a function(('b)
+	def('a +(a b))
+))
+
+inc_a(12)
+
+print(a)
+
+dec('plus_n function(('n)
+	function(('x)
+		+(n x)
+	)
+))
+
+print(plus_n(5)(5))

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+location=$(cd $(dirname $(readlink ${BASH_SOURCE[0]})) && pwd)
+
+node --harmony $location/cli.js $@

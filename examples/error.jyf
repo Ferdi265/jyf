@@ -1,0 +1,6 @@
+dec('a variadic(function(('args)
+	dec('a 5)
+	dec('a)
+)))
+
+a()

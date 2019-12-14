@@ -1,0 +1,11 @@
+dec('fact function(('n) do(
+	dec('total 1)
+	for((dec('i 2) <=(i n) inc('i))
+		def('total *(total i))
+	)
+	total
+)))
+
+for((dec('i 1) <(i 10) inc('i))
+	print(fact(i))
+)

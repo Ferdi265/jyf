@@ -1,0 +1,23 @@
+dec('contains function(('list 'el) do(
+	dec('contains false)
+	for((dec('i 0) and(not(contains) <(i length(list))) inc('i))
+		if(is(index(list i) el)
+			def('contains true)
+		)
+	)
+	contains
+)))
+
+dec('some-list (1 2 3 4 5 6 7 8))
+
+print(contains(some-list 5))
+
+dec('args-contain function(('el)
+	variadic(function(('args)
+		contains(args el)
+	))
+))
+
+dec('args-contain-5 args-contain(5))
+
+print(args-contain-5("hello" 2 3 5 0.3))

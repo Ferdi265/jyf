@@ -1,0 +1,6 @@
+dec(('i 1) ('a 2))
+
+inc('i 'a)
+
+print("i:" i)
+print("a:" a)

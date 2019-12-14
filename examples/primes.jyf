@@ -1,0 +1,13 @@
+dec('prime function(('n) do(
+	dec('isprime true)
+	for((dec('i 2) and(isprime <=(i /(n 2))) inc('i))
+		if(is(mod(n i) 0) do(
+			def('isprime false)
+		))
+	)
+	isprime
+)))
+
+for((dec('i 2) <(i 100) inc('i))
+	if(prime(i) print(i))
+)
